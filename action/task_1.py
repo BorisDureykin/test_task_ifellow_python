@@ -6,7 +6,7 @@ def task_1(count_str, span):
         count = int(count_str)
         span = int(span)
     except ValueError:
-        result_text = "Введите количество чисел в массиве!"
+        result_text = "Введите количество чисел в массиве!!"
         return  result_text
     if count <= 0:
         result_text = "Количество чисел должно быть больше нуля!"
