@@ -29,4 +29,7 @@ def window_tab_2(tab2):
     ok_button = ttk.Button(tab2, text="Ok", width=23, command=hide_result)
 
     result_label = ttk.Label(tab2, text="", justify="center")
+<<<<<<< HEAD
     
+=======
+>>>>>>> 801f186 (update task_2)
