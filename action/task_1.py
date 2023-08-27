@@ -1,12 +1,12 @@
 import random
 
 
-def task_1(count_str, span):
+def task_1(count_str, span_str):
     try:
         count = int(count_str)
-        span = int(span)
+        span = int(span_str)
     except ValueError:
-        result_text = "Введите количество чисел в массиве!!"
+        result_text = "Введите количество чисел в массиве!"
         return  result_text
     if count <= 0:
         result_text = "Количество чисел должно быть больше нуля!"
