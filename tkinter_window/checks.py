@@ -5,7 +5,6 @@ def validate_input(P, allow_float=True):
         pattern = r"^\d*\.?\d*$"
     else:
         pattern = r"^[0-9]*$"
-
     return re.match(pattern, P) is not None
 
 def validate_time_input(P, check_hours=True):
