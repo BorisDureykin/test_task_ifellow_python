@@ -1,13 +1,4 @@
-import os
-import sys
-
 import pytest
-
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-action_path = os.path.join(current_dir, '..', 'action')
-sys.path.append(action_path)
-
 from task_3 import BaseConverter
 
 def test_convert_to_kelvin():

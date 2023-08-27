@@ -1,12 +1,3 @@
-import os
-import sys
-
-# Получаем путь к текущему файлу (test_task_1.py)
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Добавляем путь к папке 'action' в системный путь Python
-action_path = os.path.join(current_dir, '..', 'action')
-sys.path.append(action_path)
 
 from task_2 import task_2
 
