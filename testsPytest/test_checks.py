@@ -50,3 +50,4 @@ class TestValidationFunctions(unittest.TestCase):
         for value in invalid_values:
             self.assertFalse(validate_time_input(value, check_hours=False))
 
+
