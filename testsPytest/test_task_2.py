@@ -1,0 +1,34 @@
+import os
+import sys
+
+# Получаем путь к текущему файлу (test_task_1.py)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Добавляем путь к папке 'action' в системный путь Python
+action_path = os.path.join(current_dir, '..', 'action')
+sys.path.append(action_path)
+
+from task_2 import task_2
+
+
+def test_task_2_empty_string():
+    result = task_2("")
+    assert "Строка пуста" in result
+
+def test_task_2_no_repeating_symbols():
+    result = task_2("abcdef")
+    assert "Повторяющихся символов нет" in result
+
+def test_task_2_repeating_symbols():
+    result = task_2("aabbcdd")
+    assert "Проверяем текст: aabbcdd" in result
+    assert "Повторяющиеся символы: a, b, d" in result
+
+def test_task_2_special_characters():
+    result = task_2("!@#$%^&*()")
+    assert "Повторяющихся символов нет" in result
+
+def test_task_2_mixed_characters():
+    result = task_2("aabbcc!@#")
+    assert "Проверяем текст: aabbcc!@#" in result
+    assert "Повторяющиеся символы: a, b, c" in result
